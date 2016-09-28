@@ -3,10 +3,24 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+  <asp:Panel ID="panelInfo" runat="server">
+    <div class="alert alert-info" role="alert">
+        Email: <asp:Label ID="lblEmail" runat="server"></asp:Label><br />
+        Password: <asp:Label ID="lblPassword" runat="server"></asp:Label><br />
+        Address: <asp:Label ID="lblAddress" runat="server"></asp:Label><br />
+        Education: <asp:Label ID="lblEducation" runat="server"></asp:Label><br />
+        Laptop: <asp:Label ID="lblLaptop" runat="server"></asp:Label><br />
+        Skills: <asp:Label ID="lblSkills" runat="server"></asp:Label><br />
+        Province: <asp:Label ID="lblProvince" runat="server"></asp:Label><br />
+    </div>
+  </asp:Panel>
+
+
   <div class="form-group row">
       <label for="lblEmail" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
-        <asp:TextBox ID="txtName" runat="server" CssClass="form-control" required placeholder="Email" />
+        <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" required placeholder="Email" />
     </div>
   </div>
 
@@ -46,7 +60,7 @@
     <fieldset class="form-group row">
     <label for="lblSkills" class="col-sm-2 col-form-label">Skill List <br /><small id="skillHelpInline" class="text-muted">(Select All That Apply)</small></label>
        <div class="col-sm-10">
-           <asp:CheckBoxList ID="rdoSkills" runat="server" CssClass="form-check-input" required>
+           <asp:CheckBoxList ID="lstSkills" runat="server" CssClass="form-check-input" required>
                <asp:ListItem Text="HTML" Value="1"></asp:ListItem>
                <asp:ListItem Text="PHP" Value="2"></asp:ListItem>
                <asp:ListItem Text="CSS" Value="3"></asp:ListItem>
@@ -68,6 +82,6 @@
        </div>
    </fieldset>
 
-   <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-success" Text="Submit" />
+   <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-success" Text="Submit" OnClick="btnSubmit_Click" />
 
 </asp:Content>
