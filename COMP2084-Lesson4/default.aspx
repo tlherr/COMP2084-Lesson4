@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="COMP2084_Lesson4.register" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="COMP2084_Lesson4.register" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -68,6 +68,6 @@
        </div>
    </fieldset>
 
-   <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-primary" Text="Submit" />
+   <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-success" Text="Submit" />
 
 </asp:Content>

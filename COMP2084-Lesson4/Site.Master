@@ -17,12 +17,50 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="default.aspx">COMP 2084</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="default.aspx">Registration <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Other Page</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
     <div class="container">
         <form id="form1" runat="server">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
             </asp:ContentPlaceHolder>
         </form>
+    </div>
+
+    <div class="container">
+      <div class="row">
+      <hr>
+        <div class="col-lg-12">
+          <div class="col-md-6">
+            <a href="https://github.com/tlherr">@tlherr</a>    
+          </div>
+          <div class="col-md-6">
+            <p class="muted pull-right">16F Server-Side Scripting - 01 (COMP2084-16F-11167)</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="http://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
